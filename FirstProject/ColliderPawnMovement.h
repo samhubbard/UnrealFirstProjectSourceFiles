@@ -1,0 +1,19 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/PawnMovementComponent.h"
+#include "ColliderPawnMovement.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class FIRSTPROJECT_API UColliderPawnMovement : public UPawnMovementComponent
+{
+	GENERATED_BODY()
+public:
+    // TODO Check to see where this has come from as I'm sure I'll need to remember this
+    virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
+};
